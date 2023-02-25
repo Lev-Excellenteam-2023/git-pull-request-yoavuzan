@@ -1,5 +1,6 @@
 import os
 
+
 # while True:
 #     path = input("please enter a path to folders")
 #     if os.path.isdir(path):
@@ -9,7 +10,7 @@ import os
 
 
 def deep_list(path):
-    if not os.path.isdir(path):#check if the path exist
+    if not os.path.isdir(path):  # check if the path exist
         return []
     os.chdir(path)
     list_all_files = os.listdir(path)
